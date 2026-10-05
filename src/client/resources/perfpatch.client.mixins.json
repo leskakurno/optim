@@ -1,0 +1,16 @@
+{
+	"required": false,
+	"package": "com.perfpatch.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"MinecraftGlowMixin",
+		"ItemStackFoilMixin",
+		"LayerRenderStateFoilMixin"
+	],
+	"injectors": {
+		"defaultRequire": 0
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

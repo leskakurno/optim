@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "perfpatch",
+	"version": "${version}",
+	"name": "PerfPatch",
+	"description": "Client optimizations for things vanilla renders inefficiently: glowing entity outlines and enchantment glint. Works alongside Sodium (no Sodium internals used).",
+	"authors": [
+		"You"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/perfpatch/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.perfpatch.PerfPatchClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "perfpatch.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21"
+	},
+	"suggests": {
+		"sodium": "*"
+	}
+}
